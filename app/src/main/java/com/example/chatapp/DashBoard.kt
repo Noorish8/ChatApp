@@ -22,6 +22,7 @@ class DashBoard : AppCompatActivity() {
         binding = ActivityDashBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         mDbRef=FirebaseDatabase.getInstance().getReference()
 
         mAuth = FirebaseAuth.getInstance()
@@ -39,6 +40,7 @@ class DashBoard : AppCompatActivity() {
              }
            //     adapter.notifyDataSetChanged()
             }
+
 
             override fun onCancelled(error: DatabaseError) {
             }
