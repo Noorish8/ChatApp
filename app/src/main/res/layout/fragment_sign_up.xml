@@ -10,7 +10,7 @@
         android:id="@+id/view"
         android:layout_width="210dp"
         android:layout_height="450dp"
-        android:background="@color/purple_500"
+        android:background="@drawable/ic_login_bg"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
 
@@ -27,18 +27,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
 
-            android:layout_marginEnd="13dp"
-            android:text="@string/login"
-            android:background="@drawable/btn_top"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:paddingHorizontal="16dp"/>
+<!--            android:layout_marginEnd="13dp"-->
+<!--            android:background="@drawable/btn_top"-->
+<!--            android:paddingHorizontal="16dp"-->
+<!--            android:text="@string/login"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18dp" />-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
         android:layout_marginHorizontal="30dp"
         android:text="@string/login"
         android:textColor="@color/white"
-        android:background="@color/teal_200"
+        android:background="@drawable/login_btn"
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/cardView"/>

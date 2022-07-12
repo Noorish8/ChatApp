@@ -47,6 +47,7 @@ class LoginFragment : Fragment() {
                 if (task.isSuccessful) {
                     val intent =Intent(requireContext(),DashBoard::class.java)
                     startActivity(intent)
+
                     // Sign in success, update UI with the signed-in user's information
 
                 } else {

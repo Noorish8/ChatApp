@@ -50,8 +50,9 @@ class SignUpFragment : Fragment() {
                 if (task.isSuccessful) {
                     addUserToDatabase(name,email, mAuth.currentUser?.uid!!)
                     // Sign in success, update UI with the signed-in user's information
-                   val intent= Intent(requireContext(),DashBoard::class.java)
-                    startActivity(intent)
+                    (activity as MainActivity).showFragment(LoginFragment())
+                    //getActivity()?.finishAffinity();
+
                 } else {
                     // If sign in fails, display a message to the user.
 
@@ -61,7 +62,7 @@ class SignUpFragment : Fragment() {
                 }
             }
     }
-    private fun addUserToDatabase(name:String,email:String,uid:String){
+    private fun addUserToDatabase(name: String, email: String, uid:String){
         mObRef=FirebaseDatabase.getInstance().getReference()
         mObRef.child("user").child(uid).setValue(User(name,email,uid))
     }
