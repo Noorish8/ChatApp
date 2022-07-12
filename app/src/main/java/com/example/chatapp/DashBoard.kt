@@ -37,7 +37,7 @@ class DashBoard : AppCompatActivity() {
                  val currentUser =postSnapshot.getValue(User::class.java)
                  userList.add(currentUser!!)
              }
-                adapter.notifyDataSetChanged()
+           //     adapter.notifyDataSetChanged()
             }
 
             override fun onCancelled(error: DatabaseError) {
