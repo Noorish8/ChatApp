@@ -27,8 +27,12 @@ class DashBoard : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-       val  userList= ArrayList<User>()
-           binding.recyUser.adapter=UserAdapter(this, userList)
+          userList= ArrayList()
+        adapter= UserAdapter(this,userList)
+        binding.recyUser.adapter=adapter
+
+//       val  userList= ArrayList<User>()
+//           binding.recyUser.adapter=UserAdapter(this, userList)
 
         mDbRef.child("user").addValueEventListener(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
